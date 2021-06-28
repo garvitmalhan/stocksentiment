@@ -19,7 +19,7 @@ trunc_type='post'
 padding_type='post'
 oov_token = '<OOV>'
 
-phrase = ['TSLA has increased their sales']
+phrase = ['TSLA has decreased their sales']
 
 testing_sequences = tokenizer.texts_to_sequences(phrase)
 testing_padded = pad_sequences(testing_sequences, maxlen=max_length,padding=padding_type,truncating=trunc_type)
